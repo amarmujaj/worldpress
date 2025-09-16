@@ -1,4 +1,5 @@
-  </main>
+</main>
+
 
   <footer class="site-footer mt-5">
     <p>Digital School</p>
