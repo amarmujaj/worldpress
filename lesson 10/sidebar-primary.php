@@ -2,7 +2,7 @@
   <?php if ( is_active_sidebar( 'primary' ) ) : ?>
     <?php dynamic_sidebar( 'primary' ); ?>
   <?php else : ?>
-    <!-- Time to add some widgets! -->
+
     <aside id="search" class="widget widget_search">
       <?php get_search_form(); ?>
     </aside>
