@@ -115,3 +115,22 @@ class DS_Simple_Text_Widget extends WP_Widget {
 add_action( 'widgets_init', function() {
   register_widget( 'DS_Simple_Text_Widget' );
 } );
+
+
+function mytheme_pagination(
+  $query = null, $args = array()){
+  
+
+
+
+  if($query instanceof WP_Query){
+    $q =$qurey;
+  }else {
+    global $wp_query;
+    $q=$wp_query;
+  }
+
+  if(empty($q->max_numpages) || $q->max_numpages<2  ){
+    return;
+  }
+}
