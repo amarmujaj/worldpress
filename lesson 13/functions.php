@@ -164,12 +164,36 @@ function create_posttype(){
   register_post_type(
     'movies',
     array(
-      'label'=>array(
-        'name'=>__(
-          'name'=>__('Movies'),
-          
-        )
-      )
+      'labels' => array(
+        'name' => __('Movies', 'your-textdomain'),
+        // Add more labels as needed
+      ),
+      // Add more arguments as needed
     )
-  )
+  );
+}
+
+function register_taxmony_movie_genres()
+{
+  $labels = [
+    'name' => _x('movie genrs','taxonomy general name'),
+    'singular_name' => _x('movie genr','taxonomy singular name'),
+    'search_items' => __('Search movie genrs'),
+    'parent_item' => __('Parent movie genr'),
+    'parent_item_colon' => __('Parent movie genr:'),
+    'edit_item' => __('Edit movie genr'),
+    'update_item' => __('Update movie genr'),
+    'add_new_item' => __('Add new movie genr'),
+    'new_item_name' => __('New movie genr name'),
+    'menu_name' => __('movie genrs'),
+  ];
+  $args = [
+    'hierarchical' => true,
+    'labels' => $labels,
+    'show_ui' => true,
+    'show_admin_column' => true,
+    'query_var' => true,
+    'rewrite' => array('slug'=>'movie-genrs'),
+  ];
+  
 }
