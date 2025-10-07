@@ -1,6 +1,167 @@
 <?php get_header(); ?>
 
 
+
+
+<section class="hero-slider-wrap">
+  <div class="hero-section best-hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Build Your Dream Website</h1>
+      <p class="hero-sub">A premium, modern WordPress theme for creators, businesses, and portfolios.</p>
+      <a href="#" class="hero-btn">Start Now</a>
+    </div>
+  </div>
+  <section class="slider-section best-slider">
+    <div class="slider-container">
+      <div class="slider-track">
+        <div class="slide active">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="Nature">
+          <div class="slide-caption">
+            <h2>Stunning Nature</h2>
+            <p>Experience breathtaking landscapes and vibrant colors.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80" alt="Workspace">
+          <div class="slide-caption">
+            <h2>Creative Workspace</h2>
+            <p>Design, create, and collaborate in inspiring environments.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1200&q=80" alt="Design">
+          <div class="slide-caption">
+            <h2>Modern Design</h2>
+            <p>Clean, elegant, and fully responsive layouts for any project.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1465101178521-cb6e446a8fdf?auto=format&fit=crop&w=1200&q=80" alt="City Night">
+          <div class="slide-caption">
+            <h2>City Nights</h2>
+            <p>Vibrant cityscapes and urban adventures after dark.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80" alt="Mountains">
+          <div class="slide-caption">
+            <h2>Majestic Mountains</h2>
+            <p>Explore the beauty and serenity of mountain peaks.</p>
+          </div>
+        </div>
+      </div>
+</section>
+
+<!-- Featured Videos Section -->
+<section class="featured-videos-section">
+  <h2 class="featured-videos-title">Featured Videos</h2>
+  <div class="featured-videos-grid">
+    <div class="featured-video">
+      <iframe width="360" height="215" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+      <div class="video-caption">Inspiration for Creators</div>
+    </div>
+    <div class="featured-video">
+      <iframe width="360" height="215" src="https://www.youtube.com/embed/ysz5S6PUM-U" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+      <div class="video-caption">Modern Web Design Trends</div>
+    </div>
+    <div class="featured-video">
+      <iframe width="360" height="215" src="https://player.vimeo.com/video/76979871" title="Vimeo video" frameborder="0" allowfullscreen></iframe>
+      <div class="video-caption">Creative Motion Graphics</div>
+    </div>
+    <div class="featured-video">
+      <iframe width="360" height="215" src="https://www.youtube.com/embed/3fumBcKC6RE" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+      <div class="video-caption">Amazing Nature Documentary</div>
+    </div>
+    <div class="featured-video">
+      <iframe width="360" height="215" src="https://www.youtube.com/embed/tgbNymZ7vqY" title="YouTube video" frameborder="0" allowfullscreen></iframe>
+      <div class="video-caption">Travel the World</div>
+    </div>
+    <div class="featured-video">
+      <iframe width="360" height="215" src="https://player.vimeo.com/video/137857207" title="Vimeo video" frameborder="0" allowfullscreen></iframe>
+      <div class="video-caption">Art & Animation</div>
+    </div>
+  </div>
+
+<!-- Gallery Section -->
+<section class="gallery-section">
+  <h2 class="gallery-title">Photo Gallery</h2>
+  <div class="gallery-grid gold-gallery">
+    <div class="gallery-item gold-item">
+      <a href="https://images.unsplash.com/photo-1465101178521-cb6e446a8fdf?auto=format&fit=crop&w=1200&q=80" class="gallery-link" data-caption="City Night">
+        <img src="https://images.unsplash.com/photo-1465101178521-cb6e446a8fdf?auto=format&fit=crop&w=600&q=80" alt="City Night" loading="lazy" onerror="this.src='https://via.placeholder.com/220x150?text=No+Image';">
+        <span class="gallery-caption">City Night</span>
+      </a>
+    </div>
+    <div class="gallery-item gold-item">
+      <a href="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80" class="gallery-link" data-caption="Mountains">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80" alt="Mountains" loading="lazy" onerror="this.src='https://via.placeholder.com/220x150?text=No+Image';">
+        <span class="gallery-caption">Mountains</span>
+      </a>
+    </div>
+    <div class="gallery-item gold-item">
+      <a href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" class="gallery-link" data-caption="Nature">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Nature" loading="lazy" onerror="this.src='https://via.placeholder.com/220x150?text=No+Image';">
+        <span class="gallery-caption">Nature</span>
+      </a>
+    </div>
+    <div class="gallery-item gold-item">
+      <a href="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80" class="gallery-link" data-caption="Workspace">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Workspace" loading="lazy" onerror="this.src='https://via.placeholder.com/220x150?text=No+Image';">
+        <span class="gallery-caption">Workspace</span>
+      </a>
+    </div>
+    <div class="gallery-item gold-item">
+      <a href="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1200&q=80" class="gallery-link" data-caption="Design">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Design" loading="lazy" onerror="this.src='https://via.placeholder.com/220x150?text=No+Image';">
+        <span class="gallery-caption">Design</span>
+      </a>
+    </div>
+    <div class="gallery-item gold-item">
+      <a href="https://images.unsplash.com/photo-1465101178521-cb6e446a8fdf?auto=format&fit=crop&w=1200&q=80" class="gallery-link" data-caption="City Night 2">
+        <img src="https://images.unsplash.com/photo-1465101178521-cb6e446a8fdf?auto=format&fit=crop&w=600&q=80" alt="City Night 2" loading="lazy" onerror="this.src='https://via.placeholder.com/220x150?text=No+Image';">
+        <span class="gallery-caption">City Night 2</span>
+      </a>
+    </div>
+    <div class="gallery-item gold-item">
+      <a href="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=80" class="gallery-link" data-caption="Mountains 2">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80" alt="Mountains 2" loading="lazy" onerror="this.src='https://via.placeholder.com/220x150?text=No+Image';">
+        <span class="gallery-caption">Mountains 2</span>
+      </a>
+    </div>
+    <div class="gallery-item gold-item">
+      <a href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" class="gallery-link" data-caption="Nature 2">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Nature 2" loading="lazy" onerror="this.src='https://via.placeholder.com/220x150?text=No+Image';">
+        <span class="gallery-caption">Nature 2</span>
+      </a>
+    </div>
+    <!-- Add more images for a fuller gallery -->
+    <div class="gallery-item gold-item">
+      <a href="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=1200&q=80" class="gallery-link" data-caption="Workspace 2">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="Workspace 2" loading="lazy" onerror="this.src='https://via.placeholder.com/220x150?text=No+Image';">
+        <span class="gallery-caption">Workspace 2</span>
+      </a>
+    </div>
+    <div class="gallery-item gold-item">
+      <a href="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=1200&q=80" class="gallery-link" data-caption="Design 2">
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=600&q=80" alt="Design 2" loading="lazy" onerror="this.src='https://via.placeholder.com/220x150?text=No+Image';">
+        <span class="gallery-caption">Design 2</span>
+      </a>
+    </div>
+    <div class="gallery-item gold-item">
+      <a href="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" class="gallery-link" data-caption="Nature 3">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="Nature 3" loading="lazy" onerror="this.src='https://via.placeholder.com/220x150?text=No+Image';">
+        <span class="gallery-caption">Nature 3</span>
+      </a>
+    </div>
+  </div>
+</section>
+</section>
+      <button class="slider-btn prev" aria-label="Previous slide">&#10094;</button>
+      <button class="slider-btn next" aria-label="Next slide">&#10095;</button>
+    </div>
+  </section>
+</section>
+
 <?php if ( have_posts() ) : ?>
   <div class="row">
     <div class="col-md-8">
@@ -32,12 +193,5 @@
   <p><?php _e('No posts found.', 'your-textdomain'); ?></p>
 <?php endif; ?>
 
-<!-- Demo boxes, outside the loop and after main content -->
-<div class="box-rounded">This box has rounded corners.</div>
-<div class="box-ellipse">Elliptical border radius.</div>
-<div class="box-border-image">This box uses a border image.</div>
-<div class="bg-example">Background with image + gradient overlay.</div>
-<div class="shadow-box">Box with shadow.</div>
-<div class="inner-shadow">Box with inner shadow.</div>
 
 <?php get_footer(); ?>
