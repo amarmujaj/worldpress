@@ -1,9 +1,36 @@
+<!-- Testimonials Section -->
+<section class="testimonials-section" data-aos="fade-up" data-aos-delay="600">
+  <h2 class="testimonials-title">What Our Users Say</h2>
+  <div class="testimonials-grid">
+    <?php
+    $testimonials = new WP_Query(array(
+      'post_type' => 'testimonial',
+      'posts_per_page' => 3,
+      'orderby' => 'date',
+      'order' => 'DESC',
+    ));
+    if ( $testimonials->have_posts() ) :
+      while ( $testimonials->have_posts() ) : $testimonials->the_post(); ?>
+        <div class="testimonial">
+          <?php if ( has_post_thumbnail() ) : ?>
+            <div class="testimonial-img"><?php the_post_thumbnail('thumbnail'); ?></div>
+          <?php endif; ?>
+          <div class="testimonial-content">
+            <div class="testimonial-text">“<?php the_content(); ?>”</div>
+            <div class="testimonial-author">— <?php the_title(); ?></div>
+          </div>
+        </div>
+      <?php endwhile; wp_reset_postdata();
+    endif;
+    ?>
+  </div>
+</section>
 <?php get_header(); ?>
 
 
 
 
-<section class="hero-slider-wrap">
+<section class="hero-slider-wrap" data-aos="fade-up">
   <div class="hero-section best-hero">
     <div class="hero-content">
       <h1 class="hero-title">Build Your Dream Website</h1>
@@ -11,9 +38,10 @@
       <a href="#" class="hero-btn">Start Now</a>
     </div>
   </div>
-  <section class="slider-section best-slider">
+  <section class="slider-section best-slider" data-aos="fade-up" data-aos-delay="200">
     <div class="slider-container">
-      <div class="slider-track">
+  <button class="slider-btn prev" aria-label="Previous Slide">&#10094;</button>
+  <div class="slider-track">
         <div class="slide active">
           <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80" alt="Nature">
           <div class="slide-caption">
@@ -49,11 +77,12 @@
             <p>Explore the beauty and serenity of mountain peaks.</p>
           </div>
         </div>
-      </div>
+  </div>
+  <button class="slider-btn next" aria-label="Next Slide">&#10095;</button>
 </section>
 
 <!-- Featured Videos Section -->
-<section class="featured-videos-section">
+<section class="featured-videos-section" data-aos="fade-up" data-aos-delay="400">
   <h2 class="featured-videos-title">Featured Videos</h2>
   <div class="featured-videos-grid">
     <div class="featured-video">

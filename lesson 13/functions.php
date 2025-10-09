@@ -6,6 +6,13 @@
 
 // Enqueue styles & scripts (Bootstrap 5 CDN + theme CSS)
 function ds_enqueue_assets() {
+  // AOS Animate On Scroll
+  wp_enqueue_style( 'aos', 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css' );
+  wp_enqueue_script( 'aos', 'https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js', array(), null, true );
+  // Init AOS
+  add_action( 'wp_footer', function() {
+    echo "<script>AOS.init({ once: true, duration: 900, easing: 'ease-in-out' });</script>";
+  });
   // Bootstrap CSS
   wp_enqueue_style( 'bootstrap-cdn', 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' );
 
@@ -52,6 +59,17 @@ function ds_widgets_init() {
     'class'         => 'sidebar-secondary',
     'before_widget' => '<ul><li id="%1$s" class="widget %2$s">',
     'after_widget'  => '</li></ul>',
+    'before_title'  => '<h3 class="widget-title">',
+    'after_title'   => '</h3>',
+  ) );
+
+  register_sidebar( array(
+    'name'          => __( 'Footer Widgets', 'dstheme' ),
+    'id'            => 'footer',
+    'description'   => __( 'Widgets in the footer area.', 'dstheme' ),
+    'class'         => 'footer-widgets',
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget'  => '</aside>',
     'before_title'  => '<h3 class="widget-title">',
     'after_title'   => '</h3>',
   ) );

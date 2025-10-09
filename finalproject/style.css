@@ -1,0 +1,14 @@
+/*
+Theme Name: FinalProject
+Theme URI: https://example.com/finalproject
+Author: You
+Author URI: https://example.com
+Description: A modern, responsive and accessible WordPress theme scaffold built for speed and clarity.
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: finalproject
+Tags: responsive, accessibility, custom-logo, custom-menu, featured-images
+*/
+
+@import url('assets/css/main.css');
